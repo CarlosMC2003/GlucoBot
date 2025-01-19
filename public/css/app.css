@@ -1,0 +1,623 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f9ff;
+}
+
+
+.contenedor-principal {
+    display: flex;
+    height: 100vh;
+    overflow-y: hidden;
+}
+
+.contenido {
+    width: 200px;
+    max-width: 200px;
+    background-color: #008894;
+    padding: 1em;
+    box-sizing: border-box;
+    color: #fff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.contenido img {
+    width: 80%;
+    padding-bottom: 30px;
+    padding-left: 30px;
+}
+
+.contenido .linea-horizontal {
+    width: 80%;
+    border: 1px solid #808080;
+    opacity: 0.2;
+    margin: 5px;
+}
+
+.contenido a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+    padding: 5px;
+}
+
+.contenido a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.contenido .icono-panel {
+    margin-right: 10px;
+}
+
+.contenedor {
+    flex: 1; /* Ocupa todo el espacio restante */
+    padding: 10px;
+    overflow-y: auto; /* Para manejar contenido largo */
+}
+
+.contenedor .cabecera {
+    display: flex;
+}
+
+.contenedor .bienvenida {
+    color: #808080;
+    padding-bottom: 10px;
+
+}
+
+.paginas {
+    display: flex;              /* Activa Flexbox */
+    justify-content: space-between; /* Distribuye los elementos: uno al inicio y otro al final */
+    align-items: center;        /* Centra verticalmente los elementos */
+    padding: 10px;              /* Espaciado interno opcional */
+}
+
+.contenedor .paginas {
+    padding: 10px;
+    display: flex;
+    margin-left: 50px;
+    font-size: 20px;
+}
+
+.contenido h4 {
+    text-align: center;
+}
+
+.boton-cerrar-sesion {
+    background-color: rgb(241, 81, 81);
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Asegura que el botón ocupe todo el ancho del aside */
+    font-size: 15px;
+    margin-top: auto; /* Empuja el botón hacia la parte inferior */
+    padding: 10px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.boton-cerrar-sesion:hover {
+    background-color: #ffff;
+    color: #008894;
+}
+
+aside {
+    display: flex;
+    flex-direction: column; /* Asegura que los elementos dentro del aside se apilen */
+    justify-content: space-between; /* Espacio entre los elementos */
+    height: 100vh; /* Ocupar toda la altura de la pantalla */
+}
+
+.contenedor .paginas {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease; 
+}
+
+.contenedor .paginas{
+    color: #808080; 
+}
+
+.contenedor .paginas p {
+    margin: 0;
+}
+
+.contenedor .paginas .texto {
+    margin-left: 5px;
+    color: #808080;
+}
+
+.paginas h3{
+    color: #008894;
+}
+
+.contenedor .contenido-pagina {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+}
+
+.contenedor .contenido-pagina .ganancias {
+    font-size: 20px;
+    color: white;
+}
+
+.contenedor .contenido-pagina section {
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.contenido-pagina {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f9ff; 
+    padding: 20px;
+}
+
+.estadistica {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 30px;
+    width: 200px;
+    height: 100px;
+    box-shadow: 0px 4px 6px #008894;
+}
+
+
+.cuadro-solid {
+    background-color: #ffffff;
+    color: #008894;
+    width: 30%;
+    border-radius: 40;
+}
+
+.texto {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
+    color: #008894;
+}
+
+.ganancias {
+    font-size: 24px;
+    margin: 0;
+    font-weight: bold;
+    color: #008894;
+}
+
+.cuadro-solid .ganancias {
+    color: #008894 !important;
+}
+
+.contenedor .tabla {
+    margin-left: 20px;
+    border: black;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.contenedor .tabla p{
+    color: #808080;
+}
+
+.contenedor th,
+td {
+    border: black;
+    padding: 8px;
+    text-align: left;
+}
+
+.contenedor .estadistica3 {
+    display: flex;
+    justify-content: center;
+}
+
+/* actualizarUsuario.php */
+
+/* Estilos para el formulario */
+.grupoInput {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #008894;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #006f6f;
+}
+
+.btn-agregar-usuario {
+    background-color: #008894; 
+    color: #ffffff;           
+    padding: 10px 20px;      
+    text-decoration: none;   
+    border-radius: 5px;       
+    font-weight: bold;        
+    display: inline-block;   
+    text-align: center;       
+}
+
+.btn-agregar-usuario:hover {
+    background-color: #006f6f;
+    color: #Ffff;
+    text-decoration: none;
+}
+/* Ajuste de estilos para el botón en el último grupoInput */
+.grupoInput:last-child button {
+    margin-top: 10px;
+}
+
+.table-responsive {
+    overflow-x: visible;
+}
+
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.table th {
+    color: #008894; 
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: top;
+    border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-sm th,
+.table-sm td {
+    padding: 0.3rem;
+}
+
+.table-bordered {
+    border-collapse: collapse;
+}
+
+.table-bordered th,
+.table-bordered td {
+    border: 1px solid #dee2e6;
+    padding: 0.75rem;
+    vertical-align: top;
+}
+
+.table-bordered thead th {
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f9f9f9;
+}
+
+.botonEliminar:hover {
+    background-color: rgb(241, 81, 81);
+}
+
+/* Pestaña revisar Historia Clinica*/
+/* Contenedor principal del formulario */
+.formulario-actualizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+}
+
+/* Formulario */
+.form-actualizar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+}
+
+/* Fila de campos */
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaciado entre los campos */
+    flex-wrap: wrap; /* Permite que los campos se ajusten si no hay espacio */
+    margin-bottom: 20px;
+}
+
+/* Campo individual */
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Los campos comparten el espacio disponible */
+    min-width: 200px; /* Tamaño mínimo de cada campo */
+}
+
+/* Input y select */
+.input-text,
+.input-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+}
+
+/* Botón */
+.form-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.boton-actualizar {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #ffff;
+    background-color: #008894;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-actualizar:hover {
+    background-color: rgba(83, 112, 114, 1);
+}
+
+/* Contenedor Scroll Historia Clinica */
+.contenedor-scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
+    max-width: 600px; /* Ajustar al ancho del formulario anterior */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-box {
+    height: 300px; /* Altura fija */
+    width: 100%;
+    padding: 15px;
+    overflow-y: auto; /* Scroll vertical */
+    overflow-x: hidden; /* Evitar scroll horizontal */
+    scrollbar-width: thin;
+    scrollbar-color: #034A51 #008894;
+    direction: rtl; /* Cambia la dirección visual del contenido */
+}
+
+.scroll-box > * {
+    direction: ltr; /* Restaura la dirección normal para el contenido interno */
+}
+
+.scroll-box::-webkit-scrollbar {
+    width: 8px;
+    position: absolute;
+    left: 0; /* Mueve el scroll al lado izquierdo */
+}
+
+.scroll-box::-webkit-scrollbar-thumb {
+    background-color: #004d66;
+    border-radius: 4px;
+}
+
+.scroll-box::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Estilo subir archivos*/
+.file-upload-container {
+    width: 100%;
+    max-width: 500px;
+    height: 200px;
+    border: 2px dashed #ccc;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    margin: 20px auto; /* Centra horizontalmente */
+    position: relative; /* Evita conflictos de posición */
+    z-index: 1; /* Asegura que no quede oculto detrás de otros elementos */
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+}
+
+.file-upload-container:hover {
+    border-color: #007bff;
+}
+
+.custom-file-label {
+    text-align: center;
+    color: #777;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.custom-file-label p {
+    margin: 10px 0 0;
+}
+
+.upload-icon svg {
+    color: #555;
+    width: 48px;
+    height: 48px;
+}
+
+input[type="file"] {
+    display: none !important;
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    z-index: -1;
+}
+
+
+/* Estilo de los contenedores internos */
+.section-box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px; /* Separación entre cajas */
+    background-color: #f9f9f9;
+}
+
+p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Contenedor principal del formulario */
+.formulario-actualizar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+/* Formulario */
+.form-actualizar {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 900px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Fila de campos */
+.form-row {
+    display: flex;
+    flex-wrap: wrap; /* Asegura que los campos se acomoden si no hay espacio */
+    justify-content: space-between; /* Espaciado uniforme */
+    gap: 20px; /* Espaciado entre los campos */
+    margin-bottom: 20px;
+}
+
+/* Campo individual */
+.grupo-input {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 220px; /* Tamaño mínimo para cada campo */
+}
+
+/* Input y select */
+.input-text,
+.input-select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Botón */
+.form-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.boton-actualizar {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #008894;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.boton-actualizar:hover {
+    background-color: rgba(83, 112, 114, 1);
+}
+
+
+/* Estilo general del formulario */
+section {
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilo de los grupos de input */
+.grupoInput {
+    margin-bottom: 15px;
+}
+
+/* Estilo de las etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilo de los campos de entrada de texto y textarea */
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
